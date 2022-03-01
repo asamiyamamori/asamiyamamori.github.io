@@ -1,0 +1,724 @@
+/*基本スタイル　ここから*/
+
+main {
+    margin: 0 auto;
+}
+
+h1 #pagetop img {
+    width: 300px;
+    /*    width: 60%;*/
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+
+/*
+h1 {
+    width: 430px;
+    height: auto;
+    margin: 50px;
+    margin-bottom: 200px;
+    margin-left: 310px;
+}
+
+.bg_color_h1 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+*/
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0px 0px 200px 0px;
+    line-height: 60px;
+    color: #999999;
+    font-weight: 400;
+}
+
+h3 {
+    margin: 80px 0px 80px 0px;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #888888;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans', '游ゴシック体', 'Noto Sans JP', sans-serif, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体";
+    letter-spacing: 0.2em;
+    background-color: rgba(221, 218, 211, 0.2);
+}
+
+.box_story img,
+.box_staff img,
+.box_menu img,
+.box_access img,
+.box_reserve img {
+    border-radius: 5px;
+}
+
+
+/*
+main:not(.top)img {
+    border-radius: 5px;
+}
+*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bg_img_top {
+    background-image: url(img/background_img/kar.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_story {
+    background-image: url(img/background_img/frid.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_staff {
+    background-image: url(img/background_img/laka.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_menu {
+    background-image: url(img/background_img/lindra.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_access {
+    background-image: url(img/background_img/fred.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_reserve {
+    background-image: url(img/background_img/avkoppling.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*基本スタイル　ここまで*/
+
+/*header ここから*/
+
+.slide img {
+    max-width: 100%;
+    margin-bottom: 100px;
+    animation-duration: 12s;
+    animation-name: fadein;
+    /*animation: 12s fadeIn;でも可能*/
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.page_img img {
+    max-width: 100%;
+    margin-bottom: 200px;
+}
+
+.page_img {
+    position: relative;
+    letter-spacing: 1em;
+}
+
+.page_img p {
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    margin: 0;
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+/*nav btn ここから*/
+
+nav {
+    text-align: center;
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+nav ul li a {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.btn01 {
+    color: #0064DB;
+}
+
+.btn01:hover {
+    letter-spacing: .45em;
+}
+
+/*
+nav .frex_box {
+    display: flex;
+}
+*/
+
+/*nav btn ここまで*/
+
+/*header ここまで*/
+
+/*footer　ここから (retopbtnあり)*/
+
+footer {
+    background-image: url(img/footer.jpg);
+}
+
+.position_box {
+    width: 150px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+
+.position_box img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+footer {
+    position: relative;
+}
+
+footer small p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+要修正*/
+
+/*frexbox使用のためコメントアウト
+footer ul li {
+    display: inline;
+}
+*/
+
+.box_footer {
+    width: 1000px;
+    margin: auto;
+}
+
+footer {
+    height: 525px;
+}
+
+.empty {
+    width: 326px;
+    height: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    width: 345px;
+    /*justify-content: space-around;*/
+}
+
+footer ul li a img {
+    width: 35px;
+    height: auto;
+    margin: 40px;
+}
+
+.footer_tel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 326px;
+    text-align: end;
+}
+
+.snsbtn_footer_tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 300px;
+}
+
+/*footer　ここまで*/
+
+/*各ページ　ここから*/
+
+/*top　ここから*/
+
+.bg_color_descroption {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+.container_top {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_top_henrik {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.description {
+    width: 60%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 60px;
+    padding: 100px 50px;
+}
+
+.container_top img {
+    max-width: 40%;
+}
+
+.news_tag {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #DDC699;
+    margin: 35px 40px 35px 40px;
+}
+
+.news {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    padding: 100px 50px 100px 50px;
+
+}
+
+.bg_color_news {
+    background-color: rgba(221, 198, 153, 0.4);
+    margin: 0 auto;
+}
+
+.time,
+.title {
+    margin: 50px 0px;
+}
+
+.inner {
+    margin: 50px 0px;
+}
+
+/*top　ここまで*/
+
+/*story　ここから*/
+
+.box_story {
+    width: 1000px;
+}
+
+.story .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.story .container:nth-child(1) {
+    margin-bottom: 0px;
+
+}
+
+.story .container .description_story {
+    font-size: 16px;
+    margin: 50px 50px 30px 50px;
+}
+
+.owner {
+    width: 350px;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+    .owner p {
+        font-size: 20px;
+    }
+
+    .story .container .swedish {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px 0px 50px 0px;
+    }
+
+    .year {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0px 0px 30px 0px;
+    }
+
+    /*story　ここまで*/
+
+    /*staff ここから*/
+
+    .clearfix {
+        width: 1000px;
+        margin: 0 auto
+    }
+
+    .staff_list div p {
+        margin-bottom: 30px;
+    }
+
+    .staff_name {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    .staff_description img {
+        float: left;
+    }
+
+    .staff_description {
+        float: right;
+    }
+
+    .staff_description img {
+        vertical-align: top;
+    }
+
+    .staff_description p {
+        width: 500px;
+        height: auto;
+    }
+
+    .staff_list {
+        margin: 180px 0px;
+    }
+
+    .staff_list:nth-child(4) {
+        margin-bottom: 0px;
+    }
+
+    /*staff ここまで*/
+
+    /*menu ここから*/
+
+    .bg_color_menu {
+        background-color: rgba(221, 198, 153, 0.4);
+        padding: 100px 0px 100px 0px;
+    }
+
+    .menu_link {
+        width: 250px;
+        margin: 0 auto;
+        line-height: 60px;
+    }
+
+    h2 p {
+        font-size: 14px;
+        margin: 10px;
+        color: #999999;
+    }
+
+    .menu .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 200px 0px 0px 0px;
+    }
+
+    .menu .flex-container p {
+        width: 450px;
+        font-size: 14px;
+    }
+
+    .bg_color_menu_oil {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .menu_list_all {
+        margin: 100px 0px;
+    }
+
+    .menu_list a {
+        max-width: 1000px;
+        font-size: 22px;
+    }
+
+    .menu_list {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description_menu {
+        margin-top: 16px;
+        line-height: 32px;
+        width: 740px;
+        padding-right: 85px;
+    }
+
+    section {
+        margin: 40px 0px 40px 0px;
+    }
+
+    .flexbox_menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .price {
+        width: 165px;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 300;
+        margin-top: 16px;
+        text-align: end;
+    }
+
+    /*menu ここまで*/
+
+    /*access ここから*/
+
+    .access .container_access {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 20px;
+    }
+
+    .access .map {
+        width: 300px;
+        text-align: right;
+    }
+
+    .access .map a {
+        color: #0064DB;
+        font-weight: bold;
+    }
+
+    .access .container_box_access {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+
+    .map {
+        text-align: end;
+    }
+
+    .add {
+        font-size: 14px;
+        margin-bottom: 120px;
+        line-height: 28px;
+    }
+
+    .add a {
+        font-size: 14px;
+    }
+
+    .info {
+        width: 600px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 100px 0px 100px 0px;
+    }
+
+    .access .bg-color_access {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgba(221, 198, 153, 0.4);
+
+    }
+
+    /*access ここまで*/
+
+    /*reserve ここから*/
+
+    form {
+        font-size: 20px;
+    }
+
+    .container_reserve_form {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    dl {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        line-height: 2.5em;
+    }
+
+    dt {
+        width: 500px;
+        text-align: left;
+        line-height: 3em;
+    }
+
+    dd {
+        width: 500px;
+        text-align: left;
+    }
+
+    dd option {
+        width: 400px;
+        text-align: left;
+    }
+
+    .reserve dd input {
+        width: 300px;
+        height: 30px;
+    }
+
+    .reserve dd select {
+        width: 300px;
+        height: 30px;
+    }
+
+    .reserve dd textarea {
+        width: 300px;
+        height: 200px;
+        line-height: 3em;
+    }
+
+    input#option {
+        width: 100px;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        margin: 150px 0px;
+    }
+
+    .reserve .submit_btn {
+        background-color: #DDC699;
+        width: 150px;
+        height: 50px;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 40px;
+        border: none;
+    }
+
+    .container_reserve_notice {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .notice {
+        width: 500px;
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+
+    .bg_colo_reserve_privacypolicy {
+        background-color: rgba(150, 150, 150, 0.5);
+        margin-bottom: 100px;
+        line-height: 30px;
+    }
+
+    .info_privacypolicy {
+        width: 1000px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bg_color_reserve_info {
+        background-color: rgba(221, 198, 153, 0.4);
+    }
+
+    .info_covid19 {
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 14px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /*reserve ここまで*/
+
+    /*各ページ　ここまで*/

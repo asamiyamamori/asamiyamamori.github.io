@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>coffee Gypcy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../common/main.js"></script>
+    <link rel="shortcut icon" href="../common/img/icon_white.png" type="image/png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../common/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="contact">
+    <header>
+        <div class="bgc_header">
+            <div class="header_snsbtn">
+                <ul class="header_snsbtn_inner">
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/twitter.png" alt="twitter"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/instagram.png" alt="instagram"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/facebook.png" alt="facebook"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div><!-- /header_snsbtn -->
+
+            <div class="bgc_header_flexbox">
+                <div class="header_flexbox">
+
+                    <div class="header_logo">
+                        <h1><a href="../index.html" id="pagetop"><img src="../common/img/logo.svg"
+                                    alt="coffeeGypcy"></a>
+                        </h1>
+                    </div><!-- /header_logoicon -->
+
+                    <nav class="pc_nav">
+                        <ul>
+                            <li>
+                                <a class="nav_btn" href="../about/index.html">About</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="../shoplist/index.html">Shoplist</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="../column/index.html">Column</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="../contact/index.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- <form method="get" action="#" class="search_container">
+                        <input type="text" size="18" placeholder="keywords">
+                        <input type="submit" value="&#xf002">
+                    </form> -->
+                </div>
+                <!-- /header_flexbox -->
+            </div>
+
+        </div>
+        <!-- /bgc_header -->
+
+    </header>
+
+    <div class="sp_nav">
+
+        <div class="sp_menu_btn">
+            <!-- span：ハンバーガーボタン -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="sp_menu">
+            <div>
+                <ul>
+                    <ul>
+                        <div class="sp_menu_pagetop">
+                            <a href="../index.html#pagetop"><img src="../common/img/logo.png" alt="coffeeGypcy"></a>
+                        </div>
+                        <li><a href="../about/index.html">About</a></li>
+                        <li> <a href="../shoplist/index.html">Shoplist</a></li>
+                        <ul>
+                            <li>
+                                <a href="../shoplist/index.html#hokkaido">北海道</a>
+                            </li>
+                            <li>
+                                <a href="../shoplist/index.html#tokyo">東京</a>
+                                <ul>
+                                    <li><a href="../shoplist/index.html#inside23">23区内</a></li>
+                                    <li><a href="../shoplist/index.html#outside23">23区外</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../column/index.html">その他の地域</a></li>
+                            <li><a href="../contact/index.html">移転・閉店</a></li>
+                        </ul>
+                        <li><a href="../column/index.html">Column</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+
+                    <div class="sp_menu_snsicon">
+                        <ul>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/twitter.png" alt="twitter"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/instagram.png" alt="instagram"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/facebook.png" alt="facebook"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/youtube.png" alt="youtube"></a></p>
+                            </li>
+                        </ul>
+                        <!-- sp_menu_snsicon -->
+                    </div>
+                </ul>
+                </ul>
+                <!-- <form method="get" action="#" class="search_container">
+                    <input type="text" size="20" placeholder="keywords">
+                    <input type="submit" value="&#xf002">
+                </form> -->
+            </div>
+        </nav>
+    </div>
+    <!-- /sp_nav -->
+
+    <main>
+        <!-- パンくずリスト -->
+        <ol class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </ol>
+        <!-- /パンくずリスト -->
+
+        <div class="bgc_contact">
+            <h2>
+                新店・閉店の情報や<br>
+                メディアへ掲載のご依頼などを<br>
+                受け付けております。<br>
+                <br>
+                どうぞお気軽にお問い合わせください。
+            </h2>
+            <form action="check.php" method="POST" class="bgc_contact_form">
+                <div class="form_inner">
+                    <div class="form_input">
+
+                        <dl class="contact_flexbox">
+                            <dt><label for="name">氏名</label><span>必須</span></dt>
+                            <dd>
+                                <input id="name" type="text" name="name">
+                            </dd>
+                        </dl>
+
+                        <dl class="contact_flexbox">
+                            <dt><label for="email">メールアドレス</label><span>必須</span></dt>
+                            <dd>
+                                <input id="email" type="text" name="email">
+                            </dd>
+                        </dl>
+
+
+                        <dl class="contact_flexbox">
+                            <dt><label for="title">件名</label><span>必須</span></dt>
+                            <!-- <dd>
+                                <input id="title" type="text" name="title">
+                            </dd> -->
+                            <dd>
+                                <select id="shop_request" name="select">
+                                    <option value="no_select">選択してください</option>
+                                    <option value="new_closed">新店・閉店の情報</option>
+                                    <option value="published">掲載のご依頼</option>
+                                    <option value="etc">その他</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <dl class="contact_flexbox">
+                            <dt><label for="comment">お問い合わせ内容</label><span>必須</span></dt>
+                            <dd><textarea id="comment" name="comment" placeholder="ご入力ください" class="comment"></textarea>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <button type="submit" value="この内容で次へ" class="submit btn"><a>確認する</a></button>
+                            <!-- <a href=""><input class="submit_btn" type="submit" value="送信する"></a> -->
+                        </dl>
+                    </div>
+                    <!-- /form_input -->
+                </div>
+                <!-- /form_inner -->
+            </form>
+        </div>
+    </main>
+    <div class="position_box"><a href="#pagetop"><img src="../common/img/top.png"></a></div>
+    <footer>
+        <div class="bgc_footer">
+            <div class="footer_inner">
+                <ul class="footer_snsbtn">
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/twitter_white.png" alt="twitter"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/instagram_white.png" alt="instagram"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/facebook_white.png" alt="facebook"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/youtube_white.png" alt="youtube"></a>
+                    </li>
+                </ul>
+
+                <div class="box_footer">
+                    <div class="footer_nav">
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../about/index.html">About</a></p>
+                            <div class="footer_nav_list">
+                                <p>Coffee Gypcyは、東京をはじめとする<br>
+                                    珈琲が飲めるカフェや<br>
+                                    純喫茶に関する情報サイトです。<br>
+                                    珈琲のおともにぴったりのお菓子のことに<br>
+                                    ついても、コラムにてご紹介しています。
+                                </p>
+                                </a>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../shoplist/index.html">Shoplist</a></p>
+                            <div class="footer_nav_list">
+
+                                <ul>
+                                    <li>
+                                        <a href="../shoplist/index.html#hokkaido">北海道</a>
+                                        <ul>
+                                            <!-- <li><a href="#">札幌</a></li> -->
+                                            <li><a href="../shoplist/index.html#kitami">北見</a></li>
+                                            <li><a href="../shoplist/index.html#tokachi">十勝</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="../shoplist/index.html#tokyo">東京</a>
+                                        <ul>
+                                            <li><a href="../shoplist/index.html#inside23">23区内</a></li>
+                                            <li><a href="../shoplist/index.html#outside23">23区外</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="../shoplist/index.html#others">その他の地域</a>
+                                    </li>
+                                    <li>
+                                        <a href="../shoplist/index.html#transferclosed">移転・閉店</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../column/index.html">Column</a></p>
+                            <div class="footer_nav_list">
+
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="index.html">Contact</a></p>
+                            <div class="footer_nav_list">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">掲載・ご質問について<br>
+                                            お問い合わせはこちらから
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                    </div>
+                    <!-- /footer_nav -->
+
+                    <div>
+                        <p class="notice_copy">当サイト内の文章・画像等の無断転載、及び複製等の行為はお控えください。<br>
+                            Unauthorized copying and replication of the contents of this site, text and images are
+                            strictly prohibited.</p>
+                        <p class="copyright">&copy;2020 coffee Gypcy All Rights Reserved.</p>
+                    </div>
+                    <!--/copyright-->
+                </div>
+                <!-- /footer_inner -->
+            </div>
+            <!-- /box_footer -->
+        </div>
+        <!--/bgc_footer-->
+
+    </footer>
+
+</body>
+
+</html>

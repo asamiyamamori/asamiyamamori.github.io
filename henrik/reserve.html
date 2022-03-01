@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relaxation salon Henrik</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="reserve">
+    <header>
+        <h1><a href="index.html" id="pagetop"><img src="img/logo_icon.svg" alt="Relaxation salon Henrik"></a></h1>
+        <nav class="frex_box">
+            <ul>
+                <li>
+                    <a class="btn btn01" href="story.html">STORY</a>
+                    <a class="btn btn01" href="staff.html">STAFF</a>
+                    <a class="btn btn01" href="menu.html">MENU</a>
+                    <a class="btn btn01" href="access.html">ACCESS</a>
+                    <a class="btn btn01" href="reserve.html">RESERVE</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="page_img">
+            <img src="img/reserve/reserve.jpg" alt="reserve">
+            <p>RESERVE</p>
+        </div>
+    </header>
+    <div class="bg_img_reserve">
+    <h2>
+        ヘンリックは、要予約制となっております。<br>
+        どうぞお気軽にご利用くださいませ。
+    </h2>
+
+    <main class="box_reserve">
+        <div class="bg_color_reserve_form_notice">
+            <div class="container_reserve_form">
+                <form action="#" method="#">
+
+                    <!--
+                    <div class="form_title">
+                       
+                        </div>
+
+                    <div class="input">
+                        
+                         </div>
+-->
+
+                    <div class="form_input">
+
+                        <dl>
+                            <dt><label for="name">氏名/フリガナ</label></dt>
+                            <dd>
+                                <p><input id="name" type="text" name="yourname"></p>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="tel">TEL</label></dt>
+                            <dd>
+                                <p><input id="tel" type="text" name="tel"></p>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="mail">MAIL</label></dt>
+                            <dd>
+                                <p><input id="mail" type="text" name="mail"></p>
+                            </dd>
+                        </dl>
+
+
+                        <dl>
+                            <dt><label for="shop">ご希望店舗</label></dt>
+                            <dd>
+                                <select id="shop_request" name="shop_serect">
+                                    <option value="no_serect">選択してください</option>
+                                    <option value="shinjuku">Shinjuku</option>
+                                    <option value="daikanyama">Daikanyama</option>
+                                </select>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="staff">ご希望スタッフ</label></dt>
+                            <dd>
+                                <select id="_request" name="staff_serect">
+                                    <option value="no_serect">選択してください</option>
+                                    <option value="Aoki">青木 玄</option>
+                                    <option value="Komatsu"> 小松 みどり</option>
+                                    <option value="" Wilden>Tobias・F・Wilden</option>
+                                    <option value="Mori">森 美帆</option>
+                                </select>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="date_first">第１ご希望日時</label></dt>
+                            <dd><input id="date_first" name="date" type="datetime-local" />
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><label for="date_second">第２ご希望日時</label></dt>
+                            <dd>
+                                <input id="date_second" name="date" type="datetime-local" />
+                            </dd>
+                        </dl>
+
+                            <dl>
+                                <dt><label for="menu">メニュー</label></dt>
+                                <dd>
+                                    <select id="menu" name="course_menu">
+                                        <option value="no_serect">選択してください</option>
+                                        <option value="CLASSIC OIL BODYCARE/60 min ¥10,500">CLASSIC OIL BODYCARE/60 min ¥10,500</option>
+                                        <option value="CLASSIC OIL BODYCARE/75 min ¥12,600">CLASSIC OIL BODYCARE/75 min ¥12,600</option>
+                                        <option value="CLASSIC OIL BODYCARE/90 min ¥16,800">CLASSIC OIL BODYCARE/90 min ¥16,800</option>
+                                        <option value="FOOT (Reflexology)/60 min ¥7,350">FOOT (Reflexology)/60 min ¥7,350</option>
+                                        <option value="SPECIAL/120 min ¥23,100">SPECIAL/120 min ¥23,100</option>
+                                        <option value="SPECIAL/150 min ¥24,150">SPECIAL/150 min ¥24,150</option>
+                                    </select>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt><label>オプションの有無</label></dt>
+                                <dd><input id="option" type="radio" name="option"><label for="option">有</label>
+                                    <input id="option" type="radio" name="option"><label>無</label>
+                                </dd>
+                            </dl>
+
+                    </div>
+
+                    <div class="etc">
+
+                        <dl>
+                            <dt><label for="comment">備考</label></dt>
+                            <dd><textarea id="comment" name="comment" placeholder="身体のことで気になることなどご記入ください" 　class="comment"></textarea>
+                            </dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="submit">
+
+                        <input class="submit_btn" 　type="submit" value="SUBMIT">
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="container_reserve_notice">
+                <p class="notice">
+                    ●ご予約後の流れ<br>
+                    ご予約フォームより送信後<br>
+                    ２４時間以内に自動返信メールをお送りします。<br>
+                    当メールにご返信いただき、ご予約完了となります。<br>
+                    <br>
+                    ●価格<br>
+                    すべて税込<br>
+                    <br>
+                    ●クレジットカード<br>
+                    可：VISA / MasterCard / AmericanExpress<br>
+                    ＊一括払いのみ<br>
+                    <br>
+                    ●アメニティ<br>
+                    紙ショーツ / ドライヤー / ヘアブラシ / ガウン<br>
+                    <br>
+                    ●キャンセルポリシー<br>
+                    ※予約日時・コースの変更およびキャンセルは<br>
+                    前日までにご連絡ください。<br>
+                    <br>
+                    ●注意事項<br>
+                    ※お待ちいただくスペースが手狭なため<br>
+                    ご予約時間の5分前をめどにお越しください。<br>
+                    ※施術時間外で、施術後のお着替え・お化粧直しに<br>
+                    10分お取りしております。<br>
+                    しっかりお化粧をされたい場合は<br>
+                    施術時間を調整して対応致します。<br>
+                </p>
+                <img src="img/reserve/reserve_1.jpg">
+            </div>
+        </div>
+
+        <div class="bg_colo_reserve_privacypolicy">
+            <p class="info_privacypolicy">
+                プライバシーポリシー<br>
+                <br>
+                当店は、お客様の個人情報の取り扱いには万全の注意を払っております。<br>
+                お客様の個人情報を第三者に無断で開示、もしくは提供することは一切いたしません。
+            </p>
+        </div>
+
+        <div class="bg_color_reserve_info">
+            <p class="info_covid19">
+                感染予防対策について<br>
+                <br>
+                <br>
+                当サロンでは、新型ウイルス感染予防対策として以下の取り組みを実施しております。<br>
+                <br>
+                ・消毒液による店内清掃及び空気清浄機による店内環境維持<br>
+                ・トリートメントルームの換気<br>
+                ・ベッドシーツやガウン、施術備品の交換徹底および使用備品の殺菌消毒の徹底<br>
+                ・スタッフの体調管理（検温含む）<br>
+                ・スタッフのマスク着用<br>
+                ・スタッフの手指洗浄と消毒の徹底<br>
+                ・お客様への体調確認と検温のお願い<br>
+                ・お客様への手指消毒のお願い<br>
+                ・お茶提供コップ、スリッパなどの使い捨てへの変更<br>
+                ・カウンセリング時のソーシャルディスタンスへの配慮(正面でお話しない)<br>
+                ・ボディ施術時のお客様のアルコール消毒<br>
+                <br>
+                お客様には大変ご迷惑おかけいたしますが、安心してお越しいただけるよう<br>
+                徹底した管理の元、営業をしてまいります。<br>
+            </p>
+        </div>
+        <!--予約フォーム・注意事項等項目・感染予防対策　閉じ-->
+        <div class="position_box"><a href="#pagetop"><img src="img/retop.png"></a></div>
+    </main>
+    </div>
+</body>
+<footer>
+    <div class="box_footer">
+        <div class="snsbtn_footer_tel">
+            <div class="empty"></div>
+            <ul class="snsbtn">
+                <li><a href="https://interplan-school.com/" target=”_blank”><img src="img/twitter.png" alt="twitter"></a></li>
+
+                <li><a href="https://interplan-school.com/" target=”_blank”><img src="img/instagram.png" alt="instagram"></a></li>
+
+                <li><a href="https://interplan-school.com/" target=”_blank”><img src="img/facebook.png" alt="facebook"></a></li>
+            </ul>
+            <div class="footer_tel">
+                <p>Shinjuku<br>
+                    <a href="tel:0312345678">03-1234-5678</a><br></p>
+                <br>
+                <p>Daikanyama<br>
+                    <a href="tel:0387654321">03-8765-4321</a><br></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright">&copy;2019 Henrik inc. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

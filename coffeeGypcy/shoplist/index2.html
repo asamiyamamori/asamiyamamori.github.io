@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>coffee Gypcy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../common/main.js"></script>
+    <link rel="shortcut icon" href="../common/img/icon_white.png" type="image/png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../common/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="shoplist">
+    <header>
+        <div class="bgc_header">
+            <div class="header_snsbtn">
+                <ul class="header_snsbtn_inner">
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/twitter.png" alt="twitter"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/instagram.png" alt="instagram"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/facebook.png" alt="facebook"></a></li>
+
+                    <li><a href="" target=”_blank”><img src="../common/img/sns/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div><!-- /header_snsbtn -->
+
+            <div class="bgc_header_flexbox">
+                <div class="header_flexbox">
+
+                    <div class="header_logo">
+                        <h1><a href="../index.html" id="pagetop"><img src="../common/img/logo.svg"
+                                    alt="coffeeGypcy"></a>
+                        </h1>
+                    </div><!-- /header_logoicon -->
+
+                    <nav class="pc_nav">
+                        <ul>
+                            <li>
+                                <a class="nav_btn" href="../about/index.html">About</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="index.html">Shoplist</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="../column/index.html">Column</a>
+                            </li>
+                            <li>
+                                <a class="nav_btn" href="../contact/index.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- <form method="get" action="#" class="search_container">
+                        <input type="text" size="18" placeholder="keywords">
+                        <input type="submit" value="&#xf002">
+                    </form> -->
+                </div>
+                <!-- /header_flexbox -->
+            </div>
+
+        </div>
+        <!-- /bgc_header -->
+
+    </header>
+
+    <div class="sp_nav">
+
+        <div class="sp_menu_btn">
+            <!-- span：ハンバーガーボタン -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="sp_menu">
+            <div>
+                <ul>
+                    <ul>
+                        <div class="sp_menu_pagetop">
+                            <a href="../index.html#pagetop"><img src="../common/img/logo.png" alt="coffeeGypcy"></a>
+                        </div>
+                        <li><a href="../about/">About</a></li>
+                        <li> <a href="index.html">Shoplist</a></li>
+                        <ul>
+                            <li>
+                                <a href="#hokkaido">北海道</a>
+                            </li>
+                            <li>
+                                <a href="#tokyo">東京</a>
+                                <ul>
+                                    <li><a href="#inside23">23区内</a></li>
+                                    <li><a href="#outside23">23区外</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#others">その他の地域</a></li>
+                            <li><a href="#transferclosed">移転・閉店</a></li>
+                        </ul>
+                        <li><a href="../column/index.html">Column</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+
+                    <div class="sp_menu_snsicon">
+                        <ul>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/twitter.png" alt="twitter"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/instagram.png" alt="instagram"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/facebook.png" alt="facebook"></a></p>
+                            </li>
+                            <li>
+                                <p><a href="#"><img src="../common/img/sns/youtube.png" alt="youtube"></a></p>
+                            </li>
+                        </ul>
+                        <!-- sp_menu_snsicon -->
+                    </div>
+                </ul>
+                </ul>
+                <!-- <form method="get" action="#" class="search_container">
+                    <input type="text" size="20" placeholder="keywords">
+                    <input type="submit" value="&#xf002">
+                </form> -->
+            </div>
+        </nav>
+    </div><!-- /sp_nav -->
+
+    <main>
+        <!-- パンくずリスト -->
+        <ol class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    Shoplist
+                </li>
+            </ul>
+        </ol>
+        <!-- /パンくずリスト -->
+
+        <div class="bgc_shoplist">
+            <div class="shoplist_container">
+
+                <div class="bgc_shoplist_select">
+                    <div class="shoplist_select">
+                        <h5>地域を選ぶ</h5>
+                        <details>
+                            <summary>北海道</summary>
+                            <ul class="details-content">
+                                <!-- <li><a href="#sapporo">札幌</a></li> -->
+                                <li><a href="index.html#kitami">北見</a></li>
+                                <li><a href="index.html#tokachi">十勝</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>東京</summary>
+                            <ul class="details-content">
+                                <li><a href="index.html#inside23">23区内</a></li>
+                                <li><a href="index.html#outside23">23区外</a></li>
+                            </ul>
+                        </details>
+
+
+                        <details>
+                            <summary>その他の地域</summary>
+                            <ul class="details-content">
+                                <li><a href="#kanagawa">神奈川</a></li>
+                                <li><a href="#chiba">千葉</a></li>
+                                <li><a href="#saitama">埼玉</a></li>
+                                <li><a href="#aichi">愛知</a></li>
+                                <li><a href="#osaka">大阪</a></li>
+                                <li><a href="#kyoto">京都</a></li>
+                                <li><a href="#hyogo">兵庫</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>移転・閉店</summary>
+                            <ul class="details-content">
+                                <li><a href="#transfer">移転</a></li>
+                                <li><a href="#closed">閉店</a></li>
+                            </ul>
+                            </summary>
+                        </details>
+                    </div>
+                    <!-- /shoplist_select -->
+                </div>
+                <!-- /bgc_shoplist_select -->
+
+                <div class="notice">
+                    <h4>ご来店時における写真撮影について</h4>
+                    <p>
+                        撮影当時は、撮影の是非を確認して撮影をさせていただいております。<br>
+                        ですが、現在、撮影可・不可の状態につきましては、お店によって変動している可能性がございます。<br>
+                        ご来店前、もしくはご来店時に、必ずご確認をお願いいたします。
+                    </p>
+                    <p>I'm checking with the cafe to see if I can take a photo.<br>
+                        However, I'm not sure if the cafe can be photographed right now, so please check when you come
+                        to the store.</p>
+                </div>
+                <!-- /notice -->
+                <article>
+                    <div class="shoplist_article">
+
+                        <h3 id="others"><a href="">その他の地域</a></h3>
+
+                        <h3 id="kanagawa"><a href="">神奈川</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kanagawa/kissadaidai/kissadaidai.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">神奈川・青葉台</p>
+                                    <p class="shop_name">橙灯</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kanagawa/onthedish/onthedish.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">神奈川・山手</p>
+                                    <p class="shop_name">on the dish</p>
+                                </div>
+                            </section>
+
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kanagawa/takeya/takeya_1.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">神奈川・黄金町</p>
+                                    <p class="shop_name">TAKEYA</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kanagawa/milkhall/milkhall.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">神奈川・鎌倉</p>
+                                    <p class="shop_name">milkhall</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kanagawa/pompomcakes/pompomcakes.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">神奈川・鎌倉</p>
+                                    <p class="shop_name">pompomcakes</p>
+                                </div>
+                            </section>
+
+                        </section>
+                        <!-- /shoplist_flexbox 神奈川-->
+
+                        <h3 id="chiba"><a href="">千葉</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/chiba/contes/contes.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">千葉</p>
+                                    <p class="shop_name">contes</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/chiba/keimeisya/keimeisya.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">千葉・本八幡</p>
+                                    <p class="shop_name">螢明舎</p>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- /shoplist_flexbox 千葉-->
+
+                        <h3 id="saitama"><a href="">埼玉</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/saitama/nofu/nofu.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">埼玉</p>
+                                    <p class="shop_name">nofu</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/saitama/perlei/perlei.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">埼玉・所沢</p>
+                                    <p class="shop_name">cafeé PERLEI（ペルレイ）</p>
+                                </div>
+                            </section>
+
+                        </section>
+                        <!-- /shoplist_flexbox 埼玉-->
+
+
+                        <h3 id="aichi"><a href="">愛知</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/aichi/bonbon/kissabonbon.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">愛知・高岳</p>
+                                    <p class="shop_name">喫茶ボンボン</p>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- /shoplist_flexbox 愛知-->
+
+                        <h3 id="osaka"><a href="">大阪</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/osaka/sewingcoffeetable/sewingcoffeetable.JPG"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">大阪</p>
+                                    <p class="shop_name">sewing coffee table</p>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- /shoplist_flexbox 大阪-->
+
+
+                        <h3 id="kyoto"><a href="">京都</a></h3>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/stardust/stardust.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都・北大路</p>
+                                    <p class="shop_name">STARDUST</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/kissafransois/kissafransois.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都</p>
+                                    <p class="shop_name">喫茶フランソア</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/kissaashijima/kissaashijima.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都</p>
+                                    <p class="shop_name">喫茶葦島</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/hoco/hoco.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都</p>
+                                    <p class="shop_name">歩粉</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/wife&husand/wife&husand.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都・北大路</p>
+                                    <p class="shop_name">Wife & Husband</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/barmane/barmane.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都</p>
+                                    <p class="shop_name">BARMANE</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/kyoto/tsukito6pence/tsukito6pence.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">京都</p>
+                                    <p class="shop_name">月と六ペンス</p>
+                                </div>
+                            </section>
+
+                        </section>
+                        <!-- /shoplist_flexbox 京都-->
+
+
+
+                        <h3 id="hyogo"><a href="">兵庫</a></h3>
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/anthem/anthem.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・三宮</p>
+                                    <p class="shop_name">ANTHEM</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/koubekko/koubekko.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・三宮</p>
+                                    <p class="shop_name">神戸っこ</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/hummockcafe/hummockcafe.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・姫路</p>
+                                    <p class="shop_name">Hummock cafe</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/784junctioncafe/784junctioncafe.JPG"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・塩屋</p>
+                                    <p class="shop_name">784 junction cafe</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/colissimocafeselen/colissimocafeselen_1.JPG"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・篠山</p>
+                                    <p class="shop_name">colissimo cafe selen</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/rokko/rokko.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・六甲</p>
+                                    <p class="shop_name">六珈</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/midori/midori.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・苦楽園</p>
+                                    <p class="shop_name">ミドリ</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/hyougo/taocacoffee/taocacoffee.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">兵庫・苦楽園</p>
+                                    <p class="shop_name">TAOCA COFFEE</p>
+                                </div>
+                            </section>
+
+                        </section>
+                        <!-- /shoplist_flexbox 兵庫-->
+
+                        <h3 id="transferclosed"><a href="">移転・閉店</a></h3>
+
+                        <h4 id="transfer"><a href="">移転</a></h4>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/transfer/hadenbooks_tf/hadenbooks_transfer.JPG"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">東京・南青山</p>
+                                    <p class="shop_name">Haden books</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/transfer/mooncoffeesalon_tf/mooncoffeesalon_transfer.JPG"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">東京・参宮橋</p>
+                                    <p class="shop_name">Moon coffee salon</p>
+                                </div>
+                            </section>
+
+
+                        </section> <!-- /shoplist_flexbox 移転-->
+
+
+
+                        <h4 id="closed"><a href="">閉店</a></h4>
+
+                        <section class="shoplist_flexbox">
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/closed/kissarose_closed.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">東京・渋谷</p>
+                                    <p class="shop_name">喫茶ROSE</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/closed/yokoo_closed.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">東京・吉祥寺</p>
+                                    <p class="shop_name">喫茶 横尾</p>
+                                </div>
+                            </section>
+
+                            <section class="shoplist_box">
+                                <div class="shoplist_img">
+                                    <a href="">
+                                        <img src="../common/img/photo/closed/poupee.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="shoplist_text">
+                                    <p class="shop_place">東京・北参道</p>
+                                    <p class="shop_name">メゾンド・プーペ</p>
+                                </div>
+                            </section>
+
+                        </section>
+                        <!-- /shoplist_flexbox 閉店-->
+
+                    </div>
+                    <!-- /shoplist_article -->
+
+                </article>
+
+                <div class="pagination">
+                    <ul>
+                        <a class="behind_next_page" href="index.html">
+                            <li>前へ</li>
+                        </a>
+                        <a href="index.html">
+                            <li>1</li>
+                        </a>
+                        <a class="is-active" href="index2.html">
+                            <li>2</li>
+                        </a>
+                        <a class="behind_next_page" href="#">
+                            <li>次へ</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="bgc_shoplist_pickup">
+                    <div class="box_shoplist_pickup">
+
+                        <div class="title">
+                            <h3>Pick up</h3>
+                            <span>おすすめコラム</span>
+                        </div>
+
+                        <div class="shoplist_banner">
+                            <a href="#"><img src="../common/img/banner/banner_coffeebaked_relative.jpg" alt=""></a>
+                            <a href="#"><img src="../common/img/banner/banner_pudiing.jpg" alt=""></a>
+                            <a href="#"><img src="../common/img/banner/banner_recommend_jyunkissa_tokyo.jpg" alt=""></a>
+                            <a href="#"><img src="../common/img/banner/banner_catcafe.jpg" alt=""></a>
+                        </div>
+                        <!--/shoplist_banner-->
+                    </div>
+                    <!-- /box_shoplist_pickup -->
+                </div>
+
+            </div>
+            <!-- /shoplist_pickup_flexbox -->
+        </div>
+        <!-- /shoplist_container -->
+        </div>
+        <!-- /bgc_shoplist -->
+
+
+    </main>
+    <div class="position_box"><a href="#pagetop"><img src="../common/img/top.png"></a></div>
+    <footer>
+        <div class="bgc_footer">
+            <div class="footer_inner">
+                <ul class="footer_snsbtn">
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/twitter_white.png" alt="twitter"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/instagram_white.png" alt="instagram"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/facebook_white.png" alt="facebook"></a>
+                    </li>
+
+                    <li>
+                        <a href="" target=”_blank”><img src="../common/img/sns/youtube_white.png" alt="youtube"></a>
+                    </li>
+                </ul>
+
+                <div class="box_footer">
+                    <div class="footer_nav">
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../about/index.html">About</a></p>
+                            <div class="footer_nav_list">
+                                <p>Coffee Gypcyは、東京をはじめとする<br>
+                                    珈琲が飲めるカフェや<br>
+                                    純喫茶に関する情報サイトです。<br>
+                                    珈琲のおともにぴったりのお菓子のことに<br>
+                                    ついても、コラムにてご紹介しています。
+                                </p>
+                                </a>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="index.html">Shoplist</a></p>
+                            <div class="footer_nav_list">
+
+                                <ul>
+                                    <li>
+                                        <a href="#hokkaido">北海道</a>
+                                        <ul>
+                                            <!-- <li><a href="#">札幌</a></li> -->
+                                            <li><a href="#kitami">北見</a></li>
+                                            <li><a href="#tokachi">十勝</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#tokyo">東京</a>
+                                        <ul>
+                                            <li><a href="#inside23">23区内</a></li>
+                                            <li><a href="#outside23">23区外</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#others">その他の地域</a>
+                                    </li>
+                                    <li>
+                                        <a href="#transferclosed">移転・閉店</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../column/index.html">Column</a></p>
+                            <div class="footer_nav_list">
+
+                                <ul>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                                </a>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                        <div class="footer_nav_inner">
+                            <p class="footer_nav_title"><a href="../contact/index.html">Contact</a></p>
+                            <div class="footer_nav_list">
+
+                                <ul>
+                                    <li>
+                                        <a href="../contact/index.html">掲載・ご質問について<br>
+                                            お問い合わせはこちらから
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                                </a>
+                            </div>
+                            <!-- /footer_nav_list -->
+                        </div>
+                        <!-- /footer_nav_inner -->
+                    </div>
+                    <!-- /footer_nav -->
+
+                    <div>
+                        <p class="notice_copy">当サイト内の文章・画像等の無断転載、及び複製等の行為はお控えください。<br>
+                            Unauthorized copying and replication of the contents of this site, text and images are
+                            strictly prohibited.</p>
+                        <p class="copyright">&copy;2020 coffee Gypcy All Rights Reserved.</p>
+                    </div>
+                    <!--/copyright-->
+                </div>
+                <!-- /footer_inner -->
+            </div>
+            <!-- /box_footer -->
+        </div>
+        <!--/bgc_footer-->
+
+    </footer>
+
+</body>
+
+</html>
